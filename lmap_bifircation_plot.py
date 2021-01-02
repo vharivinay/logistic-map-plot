@@ -24,7 +24,7 @@ def lmap_compute(xn=4,r=0.0015):
     xvals = []
 
     for r in np.arange(0,xn,r):
-        #print('r = {}\r'.format(r), end="") # Disable because jit doesnt like it! 
+        #print('r = {}\r'.format(r), end="") # Disabled because jit doesnt like it! 
         xold = 0.5
         # To get equlibrium value
         for i in range(2000):

@@ -42,13 +42,19 @@ def lmap_compute(xn=4,r=0.0015):
                 break
     return rvals,xvals
 
+# Run the main function
+
+## Define Inputs
 xn = 4
 r = 0.0025
+
 tic = time.perf_counter()
 rvals,xvals = lmap_compute(xn,r)
 toc = time.perf_counter()
 
-print('time: ',abs(toc - tic))
+print('computation time: ',abs(toc - tic))
+
+# Visualization
 
 f = plt.figure(figsize = (16,12))
 plt.subplot(111)
